@@ -27,7 +27,7 @@ header h1 {
 }
 
 nav {
-	margin: 10% 5% 0 5%;
+	margin: 11% 5% 0 5%;
 	text-align: center;
 }
 
@@ -55,17 +55,23 @@ nav a:hover p {
 article {
 	margin: 3% 10%;
 	font-family: 'Roboto', sans-serif;
+	padding: 15px;
+	border-radius: 2.5%;
+	background-color: #eeeeee;
+	box-shadow: 0 3px 11px -7.5px black;
 }
 
 article img {
 	display: block;
 	margin: 0 auto;
-	width: 80%;
-	border-radius: 5%;
+	width: 99%;
+	border-radius: 2.5%;
+	border: 2px white solid;
+	box-shadow: 0 3px 11px -7.5px black;
 }
 
 article h2 {
-	margin: 5px 0;
+	margin: 10px 0;
 	color: #42bbe3;
 }
 
