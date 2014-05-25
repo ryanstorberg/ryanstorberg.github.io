@@ -1,0 +1,218 @@
+body {
+	margin: 0;
+}
+
+img {
+	display: inline-block;
+	float: left;
+}
+
+h1 {
+	text-align: center;
+}
+
+
+	h1 {
+		font-size: 1em;
+	}
+
+	#ocean1 {
+		height: 400px;
+		width: 50%;
+	}
+	#rock1 {
+		height: 400px;
+		width: 50%;
+	}
+	#ocean2 {
+		height: 400px;
+		width: 33.3333%;
+	}
+	#rock2 {
+		height: 400px;
+		width: 33.3333%;
+	}
+	#ocean3 {
+		height: 400px;
+		width: 33.3333%;
+	}
+	#rock3 {
+		height: 400px;
+		width: 25%;
+	}
+	#ocean4 {
+		height: 400px;
+		width: 25%;
+	}
+	#rock4 {
+		height: 400px;
+		width: 25%;
+	}
+	#ocean5 {
+		height: 400px;
+		width: 25%;
+	}
+	#rock5 {
+		height: 400px;
+		width: 50%;
+	}
+	#ocean6 {
+		height: 400px;
+		width: 50%;
+	}
+
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+	h1 {
+		font-size: 0.8em
+	}
+
+	#ocean1 {
+		height: 350px;
+		width: 100%;
+	}
+	#rock1 {
+		height: 350px;
+		width: 50%;
+	}
+	#ocean2 {
+		height: 350px;
+		width: 50%;
+	}
+	#rock2 {
+		height: 350px;
+		width: 33.3333%;
+	}
+	#ocean3 {
+		height: 350px;
+		width: 33.3333%;
+	}
+	#rock3 {
+		height: 350px;
+		width: 33.3333%;
+	}
+	#ocean4 {
+		height: 350px;
+		width: 25%;
+	}
+	#rock4 {
+		height: 350px;
+		width: 25%;
+	}
+	#ocean5 {
+		height: 350px;
+		width: 25%;
+	}
+	#rock5 {
+		height: 350px;
+		width: 25%;
+	}
+	#ocean6 {
+		height: 350px;
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	h1 {
+			font-size: 0.6em;
+		}
+
+	#ocean1 {
+		height: 300px;
+		width: 100%;
+	}
+	#rock1 {
+		height: 300px;
+		width: 100%;
+	}
+	#ocean2 {
+		height: 300px;
+		width: 33.3333%;
+	}
+	#rock2 {
+		height: 300px;
+		width: 33.3333%;
+	}
+	#ocean3 {
+		height: 300px;
+		width: 33.3333%;
+	}
+	#rock3 {
+		height: 300px;
+		width: 25%;
+	}
+	#ocean4 {
+		height: 300px;
+		width: 25%;
+	}
+	#rock4 {
+		height: 300px;
+		width: 25%;
+	}
+	#ocean5 {
+		height: 300px;
+		width: 25%;
+	}
+	#rock5 {
+		height: 300px;
+		width: 50%;
+	}
+	#ocean6 {
+		height: 300px;
+		width: 50%;
+	}
+}
+}
+
+@media screen and (max-width: 480px) {
+		h1 {
+			font-size: 0.4em;
+		}
+
+	#ocean1 {
+		height: 250px;
+		width: 100%;
+	}
+	#rock1 {
+		height: 250px;
+		width: 100%;
+	}
+	#ocean2 {
+		height: 250px;
+		width: 100%;
+	}
+	#rock2 {
+		height: 250px;
+		width: 50%;
+	}
+	#ocean3 {
+		height: 250px;
+		width: 50%;
+	}
+	#rock3 {
+		height: 250px;
+		width: 33.3333%;
+	}
+	#ocean4 {
+		height: 250px;
+		width: 33.3333%;
+	}
+	#rock4 {
+		height: 250px;
+		width: 33.3333%;
+	}
+	#ocean5 {
+		height: 250px;
+		width: 50%;
+	}
+	#rock5 {
+		height: 250px;
+		width: 50%;
+	}
+	#ocean6 {
+		height: 250px;
+		width: 100%;
+	}
+}

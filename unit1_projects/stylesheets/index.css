@@ -1,0 +1,111 @@
+ {
+	border: 1px black solid;
+}
+
+body {
+	margin: auto;
+	background-color: white;
+}
+
+header {
+	top: 0;
+	right: 25%;
+	left: 25%;
+	padding-top: 100px;
+	position: fixed;
+	width: 275px;
+	box-shadow: 0 12px 11px -15px black;
+	margin: auto;
+	background-color: white;
+}
+
+	header h1 {
+		margin: none;
+		padding: none;
+		text-align: center;
+		color: gray;
+		font-family: 'Allerta Stencil', sans-serif;	}
+
+	header h1 a {
+		text-decoration: none;
+		color: gray;
+	}
+
+	header h1 a:hover {
+		opacity: .60;
+	}
+
+nav {
+	text-align: center;
+	font-family: 'Allerta Stencil', sans-serif;
+	width: 225px;
+	padding: 0;
+	margin: 235px auto 0 auto;
+	background-color: white;
+}
+
+nav h6 {
+	text-align: center;
+}
+nav a {
+	text-decoration: none;
+	color: gray;
+}
+
+nav a:hover {
+	opacity: .60;
+}
+
+	ul {
+		width: 225px;
+		margin: 50px auto 100px auto;
+		padding: 0;
+		list-style: none;
+		background-image: url('../images/concrete.jpg');
+	}
+
+		li {
+			height: 100px;
+			background-color: gray;
+			margin: 10px 0;
+			box-shadow: 0 0 2px 0 black;
+			background-size: 100%;
+			background-image: url('../images/brick.jpg');
+			border-radius: 5px;
+			padding: 0 5px;
+		}
+
+		ul a {
+			font-size: 24px;
+			text-decoration: none;
+			color: #ffcccc;
+			font-family: 'Allerta Stencil', sans-serif;
+			text-shadow: 0 0 2px white;
+			transition: all 1s ease;
+		}
+
+		ul a:hover {
+			color: white;
+		}
+
+footer {
+	position: fixed;
+	right: 25%;
+	left: 25%;
+	padding-bottom: 100px;
+	bottom: 0;
+	width: 275px;
+	box-shadow: 0 -12px 11px -15px black;
+	margin: 0 auto;
+	background-color: white;
+}
+
+	footer h6 {
+		text-align: center;
+		font-family: 'Allerta Stencil', sans-serif;
+	}
+
+	footer a {
+		text-decoration: none;
+		color: gray
+	}
