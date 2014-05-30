@@ -11,7 +11,7 @@ header {
 	top: 0;
 	right: 25%;
 	left: 25%;
-	padding-top: 100px;
+	padding: 100px 0 10px 0;
 	position: fixed;
 	width: 275px;
 	box-shadow: 0 12px 11px -15px black;
@@ -40,7 +40,7 @@ nav {
 	font-family: 'Allerta Stencil', sans-serif;
 	width: 225px;
 	padding: 0;
-	margin: 235px auto 0 auto;
+	margin: 245px auto 50px auto;
 	background-color: white;
 }
 

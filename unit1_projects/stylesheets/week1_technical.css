@@ -1,6 +1,4 @@
- {
-	border: 1px black solid;
-}
+ { border: 1px black solid;}
 
 body {
 	margin: 0 auto;
@@ -42,10 +40,12 @@ nav p {
 	font-family: 'Lobster';
 	color: white;
 	background-color: #42bbe3;
+	box-shadow: 0 3px 11px -7.5px black;
 }
 
 nav a:hover p {
 	background-color: lightblue;
+	box-shadow: none;
 }
 
 #content {
