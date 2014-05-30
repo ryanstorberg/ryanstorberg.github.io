@@ -35,6 +35,7 @@ header h1 #cult {
 
 article {
 	position: relative;
+	margin-bottom: 50px;
 }
 
 article h2 {
