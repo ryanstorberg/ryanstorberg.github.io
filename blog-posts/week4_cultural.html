@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<title>The W4 Technical &amp; Cultural Blogs of Ryan Storberg</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="stylesheets/week4_cultural.css">
+		<link href='http://fonts.googleapis.com/css?family=Cousine|Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+		<script src="scripts/jquery-2.1.1.js"></script>
+		<script src="scripts/week4_cultural.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>The W4 <span id="tech">Technical</span> &amp; <span id="cult">Cultural</span> Blogs of Ryan Storberg</h1>
+		</header>
+		<div id="content">
+
+			<article class="tech">
+				<h2><time>Week 4 - June 8, 2014</time>Let's Map!</h2>
+				<p>The #map method has come in handy for me many times before. Unlike the #each method, which returns, upon iteration completion,
+				the same data that was put into it, the #map method returns 
+				an altered version of that data.</p>
+				<p>Let's say you call the #map method on an array of the lowercase alphabet:</p>
+				<div class="code"><code>
+				abc = ('a'..'z').map do |letter|<br />
+				letter += " is a letter"<br />
+				end<br />
+				<br />
+				puts abc[3] #=> "d is a letter"
+				</code></div>
+				<p>Compare this to the #each method:</p>
+				<div class="code"><code>
+				abc = ('a'..'z').each do |letter|<br />
+				letter += " is a letter"<br />
+				end<br />
+				<br />
+				puts abc[3] #=> "d"
+				</code></div>
+				<p>You may have already started to think of scenarios where something like the #map method would come in handy. My advice is to go off and experiment.</p>
+			</article>
+
+			<article class="cult">
+				<h2><time>Week 4 - June 8, 2014</time>Skill Blocks</h2>
+				<p>The tech industry, like most industries, I think, that require refined, technical, skillsets, has a shortage of hireable employees.</p>
+				<p>Homo sapiens have spent 99%+ of their existence evolving in, and for, environments outside of civilization, in smaller, hunter-gatherer type groupings. The most they had to know was the personality types of the few people around them, the local flora and fauna, the local landscape and weather patterns, and who their friends and enemies were. The amount and complexity of information that is required for homo sapiens to learn now, having been built up, particularly, over the last few centuries, is asking for quite a lot.</p>
+				<p>A biology student may go through college and graduate, and retain a fraction of what he was exposed to. Soon after, he might find himself with a job at a lab entering data into spreadsheets. Why not save a lot of money and time, and just learn how to enter biology data into spreadsheets? I think there's a lot of this type of stuff going on, in a lot of industries, inluding the tech industry.</p>
+				<p>A solution is for workers to be more specific with what they learn, and for employers to be more accurate with what they need. Instead of degrees that take years and fortunes to aquire, students should focus on aquiring "Skill Blocks". Instead of a job listing requiring an employee to possess a degree in a generic, overarching, domain, it asks for specific "Skill Blocks". The "Skill Blocks" should cost a fraction of what a traditional degree costs, and take a fraction of the time to aquire. The knowledge and/or skill retention rate should also be higher. And finally, the "Skill Blocks" should be standardized across all educational institutions. At the current pace of technology, and with homo sapiens' inate cognitive limitations, I think that a modular-type education system should be the way of the future.</p>
+			</article>
+
+		</div>
+		<footer>
+			<p><a href="http://ryanstorberg.github.io/">Home</a></p>
+		</footer>
+	</body>
+</html>
