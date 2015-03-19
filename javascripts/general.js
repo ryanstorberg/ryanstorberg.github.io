@@ -8,7 +8,7 @@ $(document).on("ready", function() {
 
 	if(window.mobilecheck()) {
 		$("video").hide();
-		$("#mobile-banner").show();
+		// $("#mobile-banner").show();
 	}
 
 	$(window).on("scroll", function() {

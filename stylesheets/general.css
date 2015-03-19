@@ -17,9 +17,9 @@ html, body {
   z-index: -1;
 }
 
-#mobile-banner {
+/*#mobile-banner {
   display: none;
-}
+}*/
 
 #container video {
   position: absolute;
