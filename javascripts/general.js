@@ -7,8 +7,9 @@ $(document).on("ready", function() {
 	}
 
 	if(window.mobilecheck()) {
-		$("video").hide();
 		$("#mobile-banner").show();
+	} else {
+		$("#desktop-banner").show();
 	}
 
 	$(window).on("scroll", function() {

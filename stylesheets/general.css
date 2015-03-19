@@ -21,6 +21,10 @@ html, body {
   display: none;
 }
 
+#desktop-banner {
+  display: none;
+}
+
 #container video {
   position: absolute;
   left: 50%;
