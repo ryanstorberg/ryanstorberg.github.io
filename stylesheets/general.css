@@ -69,7 +69,6 @@ h1 {
 h2 {
   font-size: 1.5em;
   margin: 15px 0 0 0;
-  /*line-height: 95%;*/
 }
 
 #work {
@@ -92,17 +91,16 @@ h2 {
   margin: 10px 0 0 0;
 }
 
-h3 {
-  font-size: 1.25em;
-  margin: 10px 0 0 0;
-}
-
 #work-list {
   min-width: 100%;
   min-height: 50%;
-  background-color: rgba(0, 150, 100, 1);
-  z-index: 2;
-  font-size: 0;
+  background-color: rgba(69, 75, 73, .75);
+  z-index: 1;
+  padding: 0;
+}
+
+#anchor {
+  clear: both;
 }
 
 nav {
@@ -129,14 +127,22 @@ a {
 }
 
 .project {
-  display: inline-block;
   margin: 0;
   padding: 0;
+  float: left;
+  display: table;
+  background-color: rgb(69, 75, 73);
 }
 
-.project img {
-  height: 100%;
-  width: 100%;
+h3 {
+  font-size: 2.5em;
+  color: white;
+  margin: 0;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Oxygen', sans-serif;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* Custom, iPhone Retina */ 
@@ -184,8 +190,9 @@ a {
 
 footer {
   text-align: center;
-  background-color: rgba(0, 150, 100, 1);
   padding: 50px;
+  /*background-color: rgba(69, 75, 73, .75);*/
+  clear: both;
 }
 
 footer img {

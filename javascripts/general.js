@@ -23,7 +23,7 @@ $(document).on("ready", function() {
 	});
 
 	var determineHeight = function(element) {
-		$(element).css("height", $(".project").width() + "px");
+		$(element).css("height", ($(".project").width() - 4) + "px");
 	}
 
 	$(window).on("resize", function() {
@@ -31,7 +31,7 @@ $(document).on("ready", function() {
 	});
 
 	$(".project").each(function() {
-    var hue = 'rgb(' + (Math.floor((100-50)*Math.random()) + 50) + ',' + (Math.floor((100-50)*Math.random()) + 50) + ',' + (Math.floor((100-50)*Math.random()) + 50) + ')';
+    var hue = 'rgb(' + (Math.floor((75-65)*Math.random()) + 65) + ',' + (Math.floor((75-65)*Math.random()) + 65) + ',' + (Math.floor((75-65)*Math.random()) + 65) + ')';
      	$(this).css("background-color", hue);
   });
 
