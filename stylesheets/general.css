@@ -19,13 +19,20 @@ html, body {
 
 #mobile-banner {
   display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 0;
 }
 
 #desktop-banner {
   display: none;
-}
-
-#container video {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -54,14 +61,15 @@ html, body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   margin: 0;
+  line-height: 95%;
 }
 
 h2 {
-  font-size: 1em;
-  margin: 0;
-  font-weight: light;
+  font-size: 1.5em;
+  margin: 15px 0 0 0;
+  /*line-height: 95%;*/
 }
 
 #work {
@@ -150,6 +158,10 @@ a {
   .project {
     width: 25%;
   }
+
+  #subtitle-break {
+    display: none;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -157,11 +169,17 @@ a {
   .project {
     width: 20%;
   }
+
+  #subtitle-break {
+    display: none;
+  }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+  #subtitle-break {
+    display: none;
+  }
 }
 
 footer {

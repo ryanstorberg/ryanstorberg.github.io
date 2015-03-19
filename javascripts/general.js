@@ -22,13 +22,18 @@ $(document).on("ready", function() {
 		}
 	});
 
-	$(".project").css("height", $(".project").width() + "px");
+	var determineHeight = function(element) {
+		$(element).css("height", $(".project").width() + "px");
+	}
+
 	$(window).on("resize", function() {
-		$(".project").css("height", $(".project").width() + "px");
+		determineHeight($(".project"));
 	});
 
 	$(".project").each(function() {
-    var hue = 'rgb(' + (Math.floor((150-100)*Math.random()) + 50) + ',' + (Math.floor((256-199)*Math.random()) + 150) + ',' + (Math.floor((256-199)*Math.random()) + 150) + ')';
+    var hue = 'rgb(' + (Math.floor((100-50)*Math.random()) + 50) + ',' + (Math.floor((100-50)*Math.random()) + 50) + ',' + (Math.floor((100-50)*Math.random()) + 50) + ')';
      	$(this).css("background-color", hue);
   });
+
+  determineHeight($(".project"));
 });
