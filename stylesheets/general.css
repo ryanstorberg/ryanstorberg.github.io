@@ -61,7 +61,7 @@ html, body {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.4em;
   margin: 0;
   line-height: 95%;
 }
@@ -91,28 +91,33 @@ h2 {
   margin: 10px 0 0 0;
 }
 
-#work-list {
-  min-width: 100%;
-  min-height: 50%;
-  background-color: rgba(69, 75, 73, .75);
-  z-index: 1;
-  padding: 0;
-}
-
-#anchor {
-  clear: both;
-}
-
 nav {
+  position: fixed;
   width: 100%;
   height: 50px;
-  background-color: rgba(0, 0, 25, 0.5);
-  text-align: center;
+  background-color: none;
+  top: 0;
+  z-index: 1;
+  -webkit-transition: background-color 750ms linear;
+  -moz-transition: background-color 750ms linear;
+  -o-transition: background-color 750ms linear;
+  -ms-transition: background-color 750ms linear;
+  transition: background-color 750ms linear;
+}
+
+nav.scrolled {
+  background-color: rgba(69, 75, 73, .75);
+  -webkit-transition: background-color 750ms linear;
+  -moz-transition: background-color 750ms linear;
+  -o-transition: background-color 750ms linear;
+  -ms-transition: background-color 750ms linear;
+  transition: background-color 750ms linear;
 }
 
 nav ul {
   margin: 0;
   padding: 0;
+  float: right;
 }
 
 nav ul li {
@@ -124,6 +129,14 @@ nav ul li {
 a {
   text-decoration: none;
   color: white;
+}
+
+#work-list {
+  min-width: 100%;
+  min-height: 50%;
+  background-color: rgba(69, 75, 73, .75);
+  z-index: 1;
+  padding: 0;
 }
 
 .project {
@@ -150,6 +163,10 @@ h3 {
   .project {
     width: 100%;
   }
+
+  nav {
+    display: none;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -165,8 +182,12 @@ h3 {
     width: 25%;
   }
 
-  #subtitle-break {
+  .title-break {
     display: none;
+  }
+
+  nav {
+    display: initial;
   }
 }
 
@@ -191,7 +212,6 @@ h3 {
 footer {
   text-align: center;
   padding: 50px;
-  /*background-color: rgba(69, 75, 73, .75);*/
   clear: both;
 }
 

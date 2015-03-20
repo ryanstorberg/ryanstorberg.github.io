@@ -16,14 +16,16 @@ $(document).on("ready", function() {
 		if($(window).scrollTop() == 0) {
 			$("#work").fadeIn();
 			$("#name-and-title").fadeIn();
+			$("nav").removeClass("scrolled");
 		} else {
 			$("#work").fadeOut();
 			$("#name-and-title").fadeOut();
+			$("nav").addClass("scrolled");
 		}
 	});
 
 	var determineHeight = function(element) {
-		$(element).css("height", ($(".project").width() - 4) + "px");
+		$(element).css("height", $(".project").width() + "px");
 	}
 
 	$(window).on("resize", function() {
