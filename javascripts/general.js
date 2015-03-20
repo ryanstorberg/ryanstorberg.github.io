@@ -7,9 +7,9 @@ $(document).on("ready", function() {
 	}
 
 	if(window.mobilecheck()) {
-		$("#fixed-banner").prepend("<img id=\"mobile-banner\" src=\"images/canyon.png\" alt=\"canyon\">");
+		$("#fixed-banner").prepend("<img id=\"media-banner\" src=\"images/canyon.png\" alt=\"canyon\">");
 	} else {
-		$("#fixed-banner").prepend("<video id=\"desktop-banner\" autoplay loop><source src=\"videos/canyon.mp4\" type=\"video/mp4\"></video>");
+		$("#fixed-banner").prepend("<video id=\"media-banner\" autoplay loop><source src=\"videos/canyon.mp4\" type=\"video/mp4\"></video>");
 	}
 
 	$(window).on("scroll", function() {

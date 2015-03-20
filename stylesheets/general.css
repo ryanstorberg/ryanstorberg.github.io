@@ -52,20 +52,7 @@ nav ul li {
   z-index: -1;
 }
 
-#mobile-banner {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  z-index: 0;
-}
-
-#desktop-banner {
+#media-banner {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -179,16 +166,12 @@ h3 {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-  #subtitle-break {
-    display: none;
-  }
+  
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-  #subtitle-break {
-    display: none;
-  }
+  
 }
 
 footer {
