@@ -24,18 +24,20 @@ $(document).on("ready", function() {
 		}
 	});
 
-	var determineHeight = function(element) {
-		$(element).css("height", $(".project").width() + "px");
+	var resizeBoxes = function(box) {
+		var container = $(box).parent();
+		var containerWidth = container.width() - (parseFloat(container.css("padding").replace("px", "")) * 2);
+		var boxMarginPercent = ((parseFloat($(box).css("margin").replace("px", "")) * 2) / containerWidth) * 100;
+
+		var newRowCount = Math.round(containerWidth / 200);
+		var newBoxDimensionPercent = (100 / newRowCount) - boxMarginPercent;
+		$(".project").css("width", newBoxDimensionPercent + "%");
+		$(".project").css("height", $(".project").width() + "px");
 	}
 
 	$(window).on("resize", function() {
-		determineHeight($(".project"));
+		resizeBoxes($(".project"));
 	});
 
-	$(".project").each(function() {
-    var hue = 'rgb(' + (Math.floor((75-65)*Math.random()) + 65) + ',' + (Math.floor((75-65)*Math.random()) + 65) + ',' + (Math.floor((75-65)*Math.random()) + 65) + ')';
-     	$(this).css("background-color", hue);
-  });
-
-  determineHeight($(".project"));
+  resizeBoxes($(".project"));
 });
