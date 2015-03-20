@@ -7,9 +7,9 @@ $(document).on("ready", function() {
 	}
 
 	if(window.mobilecheck()) {
-		$("#mobile-banner").show();
+		$("#fixed-banner").prepend("<img id=\"mobile-banner\" src=\"images/canyon.png\" alt=\"canyon\">");
 	} else {
-		$("#desktop-banner").show();
+		$("#fixed-banner").prepend("<video id=\"desktop-banner\" autoplay loop><source src=\"videos/canyon.mp4\" type=\"video/mp4\"></video>");
 	}
 
 	$(window).on("scroll", function() {
@@ -28,7 +28,6 @@ $(document).on("ready", function() {
 		var container = $(box).parent();
 		var containerWidth = container.width() - (parseFloat(container.css("padding").replace("px", "")) * 2);
 		var boxMarginPercent = ((parseFloat($(box).css("margin").replace("px", "")) * 2) / containerWidth) * 100;
-
 		var newRowCount = Math.round(containerWidth / 200);
 		var newBoxDimensionPercent = (100 / newRowCount) - boxMarginPercent;
 		$(".project").css("width", newBoxDimensionPercent + "%");
