@@ -14,6 +14,7 @@ html, body {
   position: fixed;
   top: 15.625;
   right: 59;
+  z-index: 2;
 }
 
 #arrow img {
@@ -60,6 +61,12 @@ nav ul {
 .social-icon a img {
   width: 32px;
   height: 32px;
+}
+
+.small-icon {
+  list-style: none;
+  margin: 9px;
+  display: inline-block;
 }
 
 #fixed-banner {
@@ -160,7 +167,7 @@ h3 {
 }
 
 @media only screen and (min-width : 320px) {
-  nav {
+  nav ul li {
     display: none;
   }
 }
