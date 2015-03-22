@@ -10,15 +10,15 @@ html, body {
   overflow: hidden;
 }
 
-#menu {
+#arrow {
   position: fixed;
-  top: 9;
-  right: 9;
+  top: 15.625;
+  right: 59;
 }
 
-#menu img {
-  width: 32px;
-  height: 32px;
+#arrow img {
+  width: 12px;
+  height: 18.75px;
 }
 
 nav {
@@ -51,13 +51,13 @@ nav ul {
   height: 50px;
 }
 
-nav ul li {
+.social-icon {
   list-style: none;
   margin: 9px;
   display: inline-block;
 }
 
-.social-icon {
+.social-icon a img {
   width: 32px;
   height: 32px;
 }
@@ -174,7 +174,7 @@ h3 {
     display: none;
   }
 
-  #menu {
+  #arrow {
     display: none;
   }
 
