@@ -10,6 +10,17 @@ html, body {
   overflow: hidden;
 }
 
+#menu {
+  position: fixed;
+  top: 9;
+  right: 9;
+}
+
+#menu img {
+  width: 32px;
+  height: 32px;
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -37,12 +48,18 @@ nav ul {
   margin: 0;
   padding: 0;
   float: right;
+  height: 50px;
 }
 
 nav ul li {
   list-style: none;
-  margin: 9px 10px;
+  margin: 9px;
   display: inline-block;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
 }
 
 #fixed-banner {
@@ -108,7 +125,8 @@ nav ul li {
 }
 
 #work img {
-  width: 30%;
+  width: 37.5px;
+  height: 24px;
   margin: 10px 0 0 0;
 }
 
@@ -141,21 +159,22 @@ h3 {
   vertical-align: middle;
 }
 
-/* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
   nav {
     display: none;
   }
 }
 
-/* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
   
 }
 
-/* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
   .title-break {
+    display: none;
+  }
+
+  #menu {
     display: none;
   }
 
@@ -164,12 +183,10 @@ h3 {
   }
 }
 
-/* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   
 }
 
-/* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
   
 }
@@ -183,4 +200,5 @@ footer {
 
 footer img {
   width: 75px;
+  height: 75px;
 }
