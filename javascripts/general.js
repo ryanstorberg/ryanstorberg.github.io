@@ -32,6 +32,12 @@ var checkPosition = function() {
 $(document).on("ready", function() {
 	navArray = $("nav ul li").toArray();
 
+	if(window.mobilecheck()) {
+		$("#fixed-banner").prepend("<img id=\"media-banner\" src=\"images/canyon.jpg\" alt=\"canyon\">");
+	} else {
+		$("#fixed-banner").prepend("<video id=\"media-banner\" autoplay loop poster=\"images/canyon.jpg\"><source src=\"videos/canyon.mp4\" type=\"video/mp4\"></video>");
+	}
+
 	$("#arrow a").on("click", function(e) {
 		e.preventDefault();
 		if(navArrayPosition < navArray.length - 1) {
@@ -42,12 +48,6 @@ $(document).on("ready", function() {
 		$("nav ul li").removeClass("small-icon");
 		$(navArray[navArrayPosition]).addClass("small-icon");
 	});
-
-	if(window.mobilecheck()) {
-		$("#fixed-banner").prepend("<img id=\"media-banner\" src=\"images/canyon.jpg\" alt=\"canyon\">");
-	} else {
-		$("#fixed-banner").prepend("<video id=\"media-banner\" autoplay loop poster=\"images/canyon.jpg\"><source src=\"videos/canyon.mp4\" type=\"video/mp4\"></video>");
-	}
 
 	$(window).on("scroll", function() {
 		if($(window).scrollTop() == 0) {
