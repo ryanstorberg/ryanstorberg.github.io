@@ -103,21 +103,39 @@ a {
 
 .project {
   float: left;
-  display: table;
   background-color: rgb(70, 75, 70);
   margin: 2px;
   padding: 8px;
 }
 
-h3 {
+.project h3 {
   font-size: 1.5em;
   color: white;
-  margin: 0;
-  text-align: center;
+  margin: 2px;
   -webkit-font-smoothing: antialiased;
   font-family: 'Oxygen', sans-serif;
-  display: table-cell;
-  vertical-align: middle;
+}
+
+.project p {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 0.75em;
+  margin: 8px 2px 2px 2px;
+}
+
+.project .project-tags {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 0.75em;
+  margin: 8px 0;
+}
+
+.project .project-tags span {
+  background-color: rgb(100, 100, 70);;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin: 2px;
+  display: inline-block;
 }
 
 @media only screen and (min-width : 320px) {
