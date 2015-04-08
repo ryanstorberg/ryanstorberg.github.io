@@ -50,14 +50,13 @@ $(document).on("ready", function() {
 	});
 
 	$(window).on("scroll", function() {
+		$('#social-nav').hide();
 		if($(window).scrollTop() == 0) {
 			$("#work").fadeIn();
 			$("#name-and-title").fadeIn();
-			$("nav").removeClass("scrolled");
 		} else {
 			$("#work").fadeOut();
 			$("#name-and-title").fadeOut();
-			$("nav").addClass("scrolled");
 		}
 	});
 
