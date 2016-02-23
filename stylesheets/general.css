@@ -15,10 +15,6 @@ body {
   color: black;
 }
 
-.container {
-  height: 100%;
-}
-
 .label-green {
   background-color: rgb(183, 206, 169);
 }
@@ -38,6 +34,10 @@ BANNER
   justify-content: center;
   text-align: center;
   background-color: rgb(218, 224, 234);
+  background-image: url("../images/banner-background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .banner h1 {
@@ -51,8 +51,16 @@ BANNER
   font-size: 1.5em;
 }
 
-.services {
+/******************************************************************************
+PROCESS
+******************************************************************************/
+.services-container {
+  padding: 30px;
   background-color: #e8eada;
+}
+
+.services {
+  border: 2px solid black;
 }
 
 .service {
@@ -65,12 +73,26 @@ BANNER
   text-align: center;
 }
 
+/******************************************************************************
+WORKS
+******************************************************************************/
+.works-container {
+  padding: 0 15px;
+  background-color: #e8eada;
+}
+
 .works {
-  background-color: #e0eada;
+
 }
 
 .work {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: white;
+}
 
+.work img {
+  width: 100%;
 }
 
 .work h1 {
@@ -78,6 +100,9 @@ BANNER
   text-align: center;
 }
 
+/******************************************************************************
+FOOTER
+******************************************************************************/
 footer {
   background-color: #eadcda;
 }
@@ -91,5 +116,5 @@ footer {
 .copyright {
   display: block;
   text-align: center;
-  margin-bottom: 15px;
+  padding: 15px;
 }
