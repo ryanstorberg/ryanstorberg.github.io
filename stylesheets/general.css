@@ -35,7 +35,7 @@ BANNER
   text-align: center;
   background-color: rgb(218, 224, 234);
   background-image: url("../images/banner-background.png");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: repeat;
 }
@@ -77,8 +77,8 @@ PROCESS
 WORKS
 ******************************************************************************/
 .works-container {
-  padding: 0 15px;
-  background-color: #e8eada;
+  padding: 30px 15px 0 15px;
+  background-color: #eadcda;
 }
 
 .works {
@@ -104,7 +104,11 @@ WORKS
 FOOTER
 ******************************************************************************/
 footer {
-  background-color: #eadcda;
+  background-color: rgb(218, 224, 234);
+  background-image: url("../images/banner-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .square-red {
