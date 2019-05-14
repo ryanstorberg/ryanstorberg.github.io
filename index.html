@@ -1,73 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ryan Storberg | Software Developer</title>
+		<title>Ryan Storberg</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-		<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,900' rel='stylesheet' type='text/css'>
-		<link href='stylesheets/font-awesome.min.css' rel='stylesheet'/>
-		<link href='stylesheets/bootstrap.min.css' rel='stylesheet'/>
-		<link href='stylesheets/general.css' rel='stylesheet'/>
+		<link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+		<link href="stylesheets/general.css" rel="stylesheet"/>
+		<script src="javascripts/general.js"></script>
 	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12" style="text-align: center;">
-					<h1 style="font-size: 36px; margin-top: 15px;">Ryan Storberg</h1>
-					<h2 style="font-size: 24px;">Software Developer</h2>
-				</div>
-			</div>
-
-			<hr>
-
-			<div class="row">
-				<div class="col-xs-12">
-					<ul class="footer-links" style="margin-bottom: 0;">
-						<li><a href="https://github.com/ryanstorberg" target="_blank">GitHub</a></li>
-						<li><a href="https://www.linkedin.com/in/ryanstorberg" target="_blank">Linkedin</a></li>
-						<li><a href="https://twitter.com/ryanstorberg" target="_blank">Twitter</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<hr>
-
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="row">
-						<div class="col-xs-12 col-md-6 col-md-offset-3">
-							<form accept-charset="UTF-8" action="https://formspree.io/ryan@storberg.net" method="POST">
-								<input type="hidden" name="utf8" value="✓"/>
-								<input type="hidden" name="_subject" value="Project Outline"/>
-								<input type="hidden" name="_next" value="https://images.unsplash.com/photo-1503980599186-9cc36eda351a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=6965de6abc5ecfcea0b48e6d0c116020"/>
-
-								<input type="text" name="_gotcha" style="display: none"/>
-
-								<div class="form-group">
-									<input class="form-control" type="text" name="name" placeholder="Name"/>
-								</div>
-								<div class="form-group">
-									<input class="form-control" type="email" name="_replyto" placeholder="Email Address"/>
-								</div>
-								<div class="form-group">
-									<input class="form-control" type="tel" name="phone_number" placeholder="Phone Number"/>
-								</div>
-								<div class="form-group">
-									<input class="form-control" type="text" name="budget" placeholder="Budget"/>
-								</div>
-								<div class="form-group">
-									<textarea class="form-control" name="project_outline" placeholder="Project Outline"></textarea>
-								</div>
-								<div class="submit-container">
-									<button class="btn btn-secondary" type="submit">Submit</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="javascripts/jquery.min.js" type="text/javascript"></script>
-		<script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
-		<script src="javascripts/general.js" type="text/javascript"></script>
+	<body onload="renderCurrentDay()">
+		<p>Hello World,</p>
+		<p>My name is Ryan Storberg. I'm a software engineer. I'm a nomad.</p>
+		<p>Follow me on
+			<a href="https://github.com/ryanstorberg/" target="_blank">GitHub</a>,
+			<a href="https://www.instagram.com/ryanstorberg/" target="_blank">Instagram</a>,
+			<a href="https://www.linkedin.com/in/ryanstorberg/" target="_blank">Linkedin</a>, or
+			<a href="https://twitter.com/ryanstorberg/" target="_blank">Twitter</a>.
+		</p>
+		<p>Email me at
+			<a href="mailto:ryan@storberg.xyz" target="_blank">ryan@storberg.xyz</a>.
+		</p>
+		<p>Enjoy the rest of your <span id="today"></span>!</p>
 	</body>
 </html>
